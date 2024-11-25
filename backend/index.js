@@ -18,7 +18,7 @@ const port = process.env.PORT || 5000;
 // Middleware
 app.use(express.json());
 const corsOptions = {
-  origin: process.env.ORIGIN || 'http://localhost:5173',  // Use ORIGIN from env, with fallback
+  origin: process.env.ORIGIN || 'https://chattrix-frontend.onrender.com',  // Use ORIGIN from env, with fallback
   methods: ['GET', 'POST', 'PUT', 'DELETE'],
   allowedHeaders: 'Content-Type, Authorization',
   credentials: true,
