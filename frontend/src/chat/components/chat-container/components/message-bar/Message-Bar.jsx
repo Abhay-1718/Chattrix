@@ -65,7 +65,7 @@ const MessageBar = () => {
         fileUrl: undefined,
       };
 
-      console.log("Sending message data:", messageData);
+      
       socket.emit("sendMessage", messageData);
       setMessage("");
     }
