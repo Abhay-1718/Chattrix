@@ -1,6 +1,6 @@
 // All the constants and routes used in the application
 
-export const HOST = import.meta.env.VITE_SERVER_URL || 'http://localhost:5000';
+export const HOST = import.meta.env.VITE_SERVER_URL || 'https://chattrix-backend-p6zq.onrender.com';
 
 export const AUTH_ROUTES = "api/auth";
 export const SIGNUP_ROUTE = `${AUTH_ROUTES}/signup`
