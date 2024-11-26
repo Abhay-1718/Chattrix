@@ -13,6 +13,8 @@ import "react-toastify/dist/ReactToastify.css";
 import { useAppStore } from "./store";
 import apiClient from "./lib/api-client";
 import { GET_USER_INFO } from "./utils/constant";
+import Loader from "./globalComponents/Loader";
+ 
 
 // PrivateRoute (No changes to styling or variable names)
 const PrivateRoute = ({ children }) => {
@@ -70,8 +72,9 @@ function App() {
   }, [userInfo, setUserInfo]);
 
   if (loading) {
-    return <div>Loading...</div>; // Show loading while fetching user info
+    return  <Loader/>  // Show loading while fetching user info
   }
+ 
 
   return (
     <Router>
